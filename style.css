@@ -1,0 +1,53 @@
+body {
+    background-image: url('/img/bg-cloud.jpg');
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+.textbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px
+}
+
+.title {
+    color: white;
+    background-color: aqua;
+    font-size: 50px;
+    padding: 5px;
+}
+
+.whaleback {
+    top: 76%;
+    position: absolute;
+    animation: whaleback 35s infinite;
+}
+
+@keyframes whaleback {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(230%);
+    }
+}
+
+@keyframes infinite {
+    0% {
+        background-position: 0;
+    }
+
+    50% {
+        background-position: 50%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+
+}
